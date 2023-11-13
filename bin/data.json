@@ -1,0 +1,8 @@
+{
+    "foodItems": [
+        {
+            "itemName": "broccoli",
+            "expiryDate": 20220622
+        }
+    ]
+}

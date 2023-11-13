@@ -9,7 +9,8 @@ file( GLOB SOURCES src/*.cpp )
 option(RAPIDJSON_BUILD_TESTS OFF)
 option(RAPIDJSON_BUILD_DOC "" OFF)
 option(RAPIDJSON_BUILD_EXAMPLES  "" OFF)
-find_package(RapidJSON REQUIRED)
+add_subdirectory("external/rapidjson" EXCLUDE_FROM_ALL)
+find_package(RapidJSON REQUIRED CONFIG)
 find_package(yaml-cpp REQUIRED)
 
 add_executable(${PROJECT_NAME}
